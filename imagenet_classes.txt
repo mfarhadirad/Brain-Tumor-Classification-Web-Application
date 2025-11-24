@@ -1,0 +1,4 @@
+This Patient has Glioma
+This Patient has Meningioma
+No tumor has been founded	
+This Patient has Pituitary

@@ -1,0 +1,47 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>AI Tumor Detection App</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">  
+</head>  
+<body style="background-image: url('{{ url_for('static', filename='images/Picture1.png') }}'); background-size: cover; background-position: center;">
+  <img src="{{ url_for('static', filename='icon.png') }}" alt="Uploaded Image" style="display: block; margin: 0 auto;">
+  <h1 class="text-center small-text" style="
+      font-family: 'B Nazanin', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      color: #ffffff;
+      text-align: center;
+  ">
+    Tumor Detection Application
+  </h1>
+</body>  
+  
+
+    <form class="p-3 text-center" action="/" method="post" enctype="multipart/form-data">  
+        <div class="mb-3">  
+            <label for="modelSelect" class="form-label" style="font-size: 18px; font-family: 'B Nazanin'; font-weight: bold; color: #ffffff;">Select the model</label>  
+            <select class="form-select" name="model" id="modelSelect" required>  
+                {% for model in models %}  
+                    <option value="{{ model }}" {% if selected_model == model %}selected{% endif %}>{{ model }}</option>  
+                {% endfor %}  
+            </select>  
+        </div>  
+        <input class="form-control" type="file" name="imagefile" required>  
+        <input class="btn btn-primary mt-3" type="submit" value="Tumor Diagnosis" style="font-family: B Nazanin; font-weight: bold;">  
+    </form>  
+
+    {% if prediction %}  
+        <p class="text-center" style="font-size: 20px; font-family: B Nazanin; color: #ffffff;"><b>Detection:</b> {{ prediction }}</p>  
+    {% endif %}  
+
+    {% if image_file %}  
+        <div class="text-center" style="font-size: 20px; font-family: B Nazanin; font-weight: bold; color: #ffffff">  
+            <p>Selectd Image</p>  
+            <img src="{{ url_for('static', filename='images/' + image_file) }}" alt="Uploaded Image" style="max-width: 100%; height: auto;">  
+        </div>  
+    {% endif %}  
+</body>  
+</html>
