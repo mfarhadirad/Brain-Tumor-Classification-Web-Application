@@ -15,10 +15,10 @@ GoogLeNet (98.09% Accuracy, 99.67% Sensitivity, 97.10% Precision, 96.89% Specifi
 
 ResNet-50 (98.03% Accuracy, 100% Sensitivity, 97.40% Precision, 97.31% Specificity, 98.68% F1-Score)
 
-## Note: Models are available through this link:
+## 📝Note: Models are available through this link:
+https://drive.google.com/drive/folders/1mC-iW0LCK-8v53HIkflnzVLyGHQI4zIE?usp=sharing
 
-
-## Note: Augmented data are available through this link:
+## 📝Note: Augmented data are available through this link:
 https://drive.google.com/drive/folders/152IJwaDzB-6Gs8JsWt1X2KqgGjYf1f4j?usp=sharing
 
 ## User-Friendly Web Interface: Intuitive Flask web interface allowing users to:
@@ -74,8 +74,12 @@ This project showcases the intersection of clinical radiology knowledge and adva
 
 Connect with me:  LinkedIn: [https://www.linkedin.com/mohammad-farhadi-rad-927ab7284/](https://www.linkedin.com/in/mohammad-farhadi-rad-927ab7284/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BN6x7gN78Sd2E%2FeO7Q0nIqw%3D%3D)
 
+# 👨‍💻 Developer
+Mohammad Farhadi Rad
 
+MSc Radiobiology | BSc Radiology Technology | AI Enthusiast
 
+Research Interests: Quantitative Neuroimaging, AI in Medical Diagnostics, Multimodal Data Fusion
 
 
 
